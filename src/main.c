@@ -356,7 +356,7 @@ void writeBuildingReport(double apartment1Usage[], double apartment2Usage[], dou
 		double totalUse = use1 + use2 + use3;
 		double totalBill = getTotalBill(apartment1Usage, apartment1Data.tariff) + getTotalBill(apartment2Usage, apartment2Data.tariff) + getTotalBill(apartment3Usage, apartment3Data.tariff);
 
-		fprintf(file, "Total usage: %.3lf kl\nTotal bill: R%.2lf\nMost usage: %s %s (%.3lf kL)", totalUse, totalBill, ownerName, ownerSurname, largest);
+		fprintf(file, "Total usage: %.3lf kL\nTotal bill: R%.2lf\nMost usage: %s %s (%.3lf kL)", totalUse, totalBill, ownerName, ownerSurname, largest);
 
 		printf("File saved as %s", filename);
 	}
